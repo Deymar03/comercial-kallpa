@@ -9,7 +9,7 @@ export default function Navbar({ setCurrentPage }) {
       <div className="space-x-6 text-sm md:text-base">
         <button onClick={() => setCurrentPage('home')} className="hover:text-amber-400 transition cursor-pointer">Inicio</button>
         <button onClick={() => setCurrentPage('catalog')} className="hover:text-amber-400 transition cursor-pointer">Catálogo</button>
-        <button onClick={() => setCurrentPage('showroom')} className="hover:text-amber-400 transition cursor-pointer">Showroom 3D</button>
+        <button onClick={() => setCurrentPage('showroom')} className="hover:text-amber-400 transition cursor-pointer">visualizador 3D</button>
         <button onClick={() => setCurrentPage('admin')} className="bg-amber-600 hover:bg-amber-500 text-white px-4 py-2 rounded-lg transition cursor-pointer shadow">Admin</button>
       </div>
     </nav>
