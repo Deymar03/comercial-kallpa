@@ -6,6 +6,7 @@ import Admin from './pages/Admin';
 import ProductCatalog from './components/ProductCatalog';
 import Showroom3D from './components/Showroom3D';
 
+
 export default function App() {
   const [currentPage, setCurrentPage] = useState('home');
 
@@ -18,6 +19,7 @@ export default function App() {
         {currentPage === 'catalog' && <ProductCatalog />}
         {currentPage === 'showroom' && <Showroom3D />}
         {currentPage === 'admin' && <Admin />}
+        
       </main>
 
       <Footer />

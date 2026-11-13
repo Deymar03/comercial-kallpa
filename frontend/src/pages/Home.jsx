@@ -13,7 +13,7 @@ export default function Home({ setCurrentPage }) {
             Comercial <span className="text-amber-500">Kallpa</span>
           </h1>
           <p className="text-amber-200/80 text-lg mb-8 leading-relaxed">
-            Rescatamos la tradición milenaria de los Andes a través de instrumentos acústicos de alta calidad: zampoñas, quenas, toyos y tarkas elaborados por maestros artesanos.
+            Rescatamos la tradición milenaria de los Andes a través de instrumentos acústicos de alta calidad: zampoñas, quenas, toyos y tarkas elaboradas por maestros artesanos.
           </p>
           <div className="flex space-x-4">
             <button 
@@ -24,15 +24,21 @@ export default function Home({ setCurrentPage }) {
             <button 
               onClick={() => setCurrentPage('showroom')}
               className="border border-amber-600/60 hover:bg-amber-900/30 text-amber-200 font-medium px-6 py-3 rounded-xl transition cursor-pointer">
-              Showroom 3D
+              visualizador 3D
             </button>
           </div>
         </div>
 
-        <div className="relative flex justify-center">
-          <div className="w-full h-80 md:h-96 rounded-2xl bg-gradient-to-br from-amber-900/40 to-stone-900 border border-amber-800/30 shadow-2xl flex items-center justify-center p-6 text-center">
-            <span className="text-amber-400 text-xl font-medium">🪈 [ Espacio para Visor / Imagen Destacada ]</span>
-          </div>
+        {/* Reproductor de YouTube configurado correctamente con tu enlace */}
+        <div className="relative w-full rounded-2xl overflow-hidden shadow-2xl border border-amber-800/30 bg-stone-950 aspect-video">
+          <iframe
+            className="w-full h-full object-cover"
+            src="https://www.youtube.com/embed/P_1pm1osF3U?start=63" 
+            title="Comercial Kallpa - Instrumentos Andinos"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
         </div>
       </div>
     </div>
